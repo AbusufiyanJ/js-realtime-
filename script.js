@@ -411,7 +411,7 @@ for (var i = john.length - 1; i >= 0; i-- ){
 //code challenge 5
 var AAbu = {
    fullnamee : 'Abu',
-   bills : [124, 48, 268, 180, 42], 
+   bills : [124, 48, 268, 180], 
    calctips : function() {
     this.tips = [];
     this.finalValues = [];
@@ -435,134 +435,55 @@ this.finalValues[i] = bill * bill * percentage;
   } 
  }
 }
+
+
+
+//code challenge 5 part 2
+
+var Ssufiyan = {
+  fullnamee : 'sufiyan',
+  bills : [77, 375, 110, 45], 
+  calctips : function() {
+   this.tips = [];
+   this.finalValues = [];
+
+   for (var i = 0; i < this.bills.length; i++ )
+   { 
+   var percentage;
+   var bill = this.bills[i];
+
+   if (bill < 100) {
+   percentage = .2;
+   } else if (bill >=100 && bill < 300) {
+   percentage = .10;
+   } else {
+   percentage = .25;
+   }
+  
+this.tips[i] =bill * percentage;
+this.finalValues[i] = bill * bill * percentage;
+  }
+}
+}
+
+function calcAverage(tips) {
+var sum = 0;
+for (var i = 0; i< tips.length; i++){
+sum = sum +tips[i];
+}
+  return sum /tips.length;
+}
+
 AAbu.calctips();
-console.log(AAbu);
+Ssufiyan.calctips();
 
+console.log(AAbu, Ssufiyan);
 
+AAbu.average = calcAverage(AAbu.tips);
+Ssufiyan.average = calcAverage(Ssufiyan.tips);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if ( AAbu.average > Ssufiyan.average ){
+console.log(AAbu.fullnamee + " payed highest tip " + AAbu.average );
+} else if (Ssufiyan.average > AAbu.average ) {
+  console.log (Ssufiyan.fullnamee + " payed highest tip " + Ssufiyan.average );
+}
