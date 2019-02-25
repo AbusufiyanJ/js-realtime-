@@ -267,6 +267,60 @@ console.log(abu.indexOf(1996));
 var isdesigner = abu.indexOf('designer') === -1 ? "is not a designer" : "abu is a designer";
 console.log (isdesigner); 
 
+//code challenge
+
+function payment(bill){
+   var percent;
+
+  if (bill < 50) {
+    percent = 0.2;
+  }else if (bill >= 50 && bill < 200 ) {
+    percent = 0.15;
+  } else {
+    percent = .1;
+  }
+  return percent * bill ;
+}
+
+var bills = [124, 48, 268];
+var tips = [ payment (bills[0] ),
+             payment (bills[1] ),
+             payment (bills[2] ) ];
+console.log(tips);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
