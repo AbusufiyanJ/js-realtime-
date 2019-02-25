@@ -132,7 +132,7 @@ switch(job) {
 }
 
 */
-
+/*
 var height = 0 ;
 
 
@@ -140,4 +140,105 @@ if(height || height ==  0){
   console.log('variable is defined');
 }else {
   console.log('variable has NOT been defined');
-} 
+}  */
+
+
+/*
+
+
+var t1,t2,t3,tt;
+t1 = 189;
+t2 = 120;
+t3 = 103;
+tt = (t1+t2+t3) / 3 ;
+
+var s1,s2,s3,ss;
+
+s1 = 116;
+s2 = 94;
+s3 = 123;
+ss = ( s1 +s2 +s3) / 3;
+
+var m1,m2,m3,mm;
+
+m1 = 97;
+m2 = 134;
+m3 = 105 ;
+mm = (m1+m2+m3)/3;
+ 
+if (tt > ss && tt > mm){
+  console.log('the average score is ' + t4 + ' john team wins');
+} else if ( ss > tt && ss > mm){
+  console.log('the average score is ' + s4 + ' mike team wins');
+} else if (mm > ss && mm > tt) {
+  console.log('the average score is ' + m4 + ' marry team wins');
+} else {
+  console.log('there is a draw');
+}
+
+*/
+
+
+function calculateAge(year) {
+  return 2018 - year;
+}
+
+var ageAbu = calculateAge(1980);
+var ageSufiyan = calculateAge(1996);
+var ageDavid = calculateAge(1996);
+
+console.log(ageAbu, ageSufiyan, ageDavid);
+
+function yearsUntilRetirement(year , firstname) {
+var age = calculateAge(year);
+var retirement = 65 - age;
+
+if (retirement > 0){
+
+console.log(firstname + ' retires in '
++ retirement + ' years.');
+}  else {
+  console.log(firstname + ' already retired in'
+  + retirement + ' years.');
+}
+}
+yearsUntilRetirement(1992, 'hasa');
+yearsUntilRetirement(1996, 'Abu');
+yearsUntilRetirement(1950, 'don');
+
+/**********function statement and expressions */
+
+
+//function declaration
+
+
+//function expression
+var whatDoyouDO = function(job ,firstname){
+  switch(job) {
+
+    case 'teacher':
+    return firstname + " teach kids about how to code";
+    
+    case 'driver':
+    return firstname + 'drives a car in lisbon';
+
+    case 'designer' :
+    return firstname + ' designer beautiful websites';
+
+    default:
+     return firstname + "does something else";
+ 
+  }
+}
+
+console.log(whatDoyouDO('teacher', 'sabeer'));
+console.log(whatDoyouDO('designer', 'Abu'));
+
+
+
+
+
+
+
+
+
