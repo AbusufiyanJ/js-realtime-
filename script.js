@@ -238,6 +238,76 @@ console.log(whatDoyouDO('designer', 'Abu'));
 
 
 
+// Arrays
+
+var names = ['Abu' ,'Sufiyan' , 'David'];
+
+var years = new Array (1990, 1969 , 1948);
+
+console.log(names);
+console.log(names.length);
+
+names[1] = 'ben';
+ names[5] = 'yeah';
+ console.log(names);
+
+// different data types
+
+var abu = ['abu' , 'sufiyan' , 1996, 'web developer' , 'designer'];
+
+
+abu.unshift('Mr');
+abu.push('kpr college');
+abu.pop();
+abu.shift();
+console.log(abu);
+
+console.log(abu.indexOf(1996));
+
+var isdesigner = abu.indexOf('designer') === -1 ? "is not a designer" : "abu is a designer";
+console.log (isdesigner); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
