@@ -281,27 +281,41 @@ function payment(bill){
   }
   return percent * bill ;
 }
-
-var bills = [124, 48, 268];
-var tips = [ payment (bills[0] ),
-             payment (bills[1] ),
-             payment (bills[2] ) ];
-console.log(tips);
-
-
+var bill = [124, 48, 268];
+var tips = [ payment (bill[0]  ),
+             payment (bill[1] ),
+             payment (bill[2] ) ];
+    
+    var final   =[ bill[0] + tips[0]  ];            
 
 
 
 
+//objects and properties
 
 
+//objects literals
+var jash = {
 
+  firstname: 'Abu',
+  lastname:'Sufiyan',
+  birthYear:'1990',
+  family: ['jane','mark','bob','doode'],
+  job:'teacher',
+  isMarried:false
 
+};
 
+console.log(jash.family);
+jash.job = 'web developer';
+console.log(jash['lastname']); 
 
-
-
-
+//new object syntax
+var jane = new Object();
+jane.firstname ='jane';
+jane.birthYear = '1996';
+jane.lastname = 'smith';
+console.log(jane); 
 
 
 
