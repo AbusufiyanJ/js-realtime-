@@ -317,6 +317,74 @@ jane.birthYear = '1996';
 jane.lastname = 'smith';
 console.log(jane); 
 
+// Objects and methods
+
+
+
+var jashh = {
+
+  firstname: 'Abu',
+  lastname:'Sufiyan',
+  birthYear:1996,
+  family: ['jane','mark','bob','doode'],
+  job:'teacher',
+  isMarried:false,
+
+  age : function(birthYear) {
+     this.age = 2019 - this.birthYear;
+  }
+
+};
+
+jashh.age();
+console.log(jashh);
+
+var 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
