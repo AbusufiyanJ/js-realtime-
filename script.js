@@ -338,40 +338,108 @@ var jashh = {
 
 jashh.age();
 console.log(jashh);
-//----------------------------------------
-var markkk = {
-name: 'mar',
-mass :65,
-height:6, 
-BMI : function(markkk){
-  return mass/height*height;
- }
-
-};
-
-markkk.BMI();
-console.log(markkk);
-
+//----------------------------code challenge------------
 var johnn = {
-name :'joh',
-mass :70,
-height:5.8, 
-BMI : function(height){
- return mass/height ^2;
+name: 'joh',
+mass: 69,
+height: 7, 
+calcbmi : function(){
+ this.bmi = this.mass/(this.height *this.height);
+ return this.bmi;
 }
-};
-johnn.BMI();
-console.log(johnn);
-var johnn = {
-name :'joh',
-mass :70,
-height:5.8, 
-BMI : function(height){
- return mass/height ^2;
 }
-};
-johnn.BMI();
-console.log(johnn);
+
+var markk = {
+  name : 'Abu',
+  mass : 70,
+  height: 7,
+  calcbmi : function(){
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  }
+}
+
+
+if (markk.calcbmi() > johnn.calcbmi()) {
+  console.log( markk.name + ' BMI is ' + markk.bmi + ' is greater');
+}
+else if(markk.bmi < johnn.bmi) {
+  console.log (johnn.name + ' BMI is ' + johnn.bmi + ' is greater');
+} else {
+  console.log ("Both have same BMI's")
+}
+
+//-----------loops and iteration-------------
+
+//for loop
+/*
+for  (var i = 1; i <=20; i ++ ){
+  console.log(i);
+}
+
+var john = ['john', 'smith' ,1990, 'designer' ,false ];
+
+for (var i=0 ; i < john.length ; i++ ){
+console.log(john[i]);
+}
+
+// while loop
+var i = 0;
+while (i < john.length) {
+    console.log(john[i]);
+    i++;
+}
+*/
+// continue and break statements
+
+var john = ['john', 'smith' ,1990, 'designer' ,false ];
+
+for (var i=0 ; i < john.length ; i++ ){
+    if (typeof john[i] !== 'string') continue;
+console.log(john[i]);
+}
+
+for (var i=0 ; i < john.length ; i++ ){
+  if (typeof john[i] !== 'string') break;
+console.log(john[i]);
+}
+
+// looping backwards
+for (var i = john.length - 1; i >= 0; i-- ){
+  console.log(john[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
