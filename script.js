@@ -338,11 +338,40 @@ var jashh = {
 
 jashh.age();
 console.log(jashh);
+//----------------------------------------
+var markkk = {
+name: 'mar',
+mass :65,
+height:6, 
+BMI : function(markkk){
+  return mass/height*height;
+ }
 
-var 
+};
 
+markkk.BMI();
+console.log(markkk);
 
-
+var johnn = {
+name :'joh',
+mass :70,
+height:5.8, 
+BMI : function(height){
+ return mass/height ^2;
+}
+};
+johnn.BMI();
+console.log(johnn);
+var johnn = {
+name :'joh',
+mass :70,
+height:5.8, 
+BMI : function(height){
+ return mass/height ^2;
+}
+};
+johnn.BMI();
+console.log(johnn);
 
 
 
