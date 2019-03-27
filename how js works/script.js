@@ -1,16 +1,15 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
+
 var age = prompt("Enter your date of birth and find your age:");
-calculateAge(age);
 
-function calculateAge(year) {
-    console.log(2019 - year);
+ birthh = function calculateAge(age) 
+{
+    console.log(2019 - age);
 }
+calculateAge();
 
-
-
-
-
+document.getElementById('birth').innerText= (birthh);
 
 
 
