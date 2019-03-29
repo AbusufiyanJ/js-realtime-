@@ -7,7 +7,7 @@ var age = prompt("Enter your date of birth and find your age:");
 {
     console.log(2019 - age);
 }
-calculateAge();
+
 
 document.getElementById('birth').innerText= (birthh);
 
